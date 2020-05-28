@@ -18,7 +18,9 @@
             <Entry Text="{Binding Item.Text}" d:Text="Item name" FontSize="Small" />
             <Label Text="Description" FontSize="Medium" />
             <Editor Text="{Binding Item.Description}" d:Text="Item description" FontSize="Small" Margin="0" />
-            <!-- Add CheckBox element here -->
+            <!-- Added by PT below Added CheckBox Binding  & Label elements here per Module 3 -->
+            <Label Text="Completed" />
+            <CheckBox IsChecked="{Binding Item.IsCompleted}"/>
         </StackLayout>
     </ContentPage.Content>
     
