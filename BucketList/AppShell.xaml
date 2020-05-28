@@ -30,17 +30,18 @@
     </Shell.Resources>
 
     <!-- Your Pages -->
-    <TabBar>
+    <FlyoutItem>
         <Tab Title="Browse" Icon="tab_feed.png">
             <local:ItemsPage />
-            <!-- Add NewItemPage element here -->
+            <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
         </Tab>
-        <!-- Add MissionPage element here -->
+        <ShellContent Title="Mission" ContentTemplate="{DataTemplate local:MissionPage}" />
         <Tab Title="About" Icon="tab_about.png">
             <ShellContent ContentTemplate="{DataTemplate local:AboutPage}" />
         </Tab>
-    </TabBar>
+    </FlyoutItem>
     
+
     <!-- Optional Templates 
     // These may be provided inline as below or as separate classes.
 
