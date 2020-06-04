@@ -18,3 +18,4 @@ RUN dotnet build ${APP_DIR}/BucketList/BucketList.csproj
 RUN dotnet build ${APP_DIR}/BucketListTests/BucketListTests.csproj
 
 ENTRYPOINT ["/bin/sh"]
+----test
